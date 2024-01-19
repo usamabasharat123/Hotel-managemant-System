@@ -1,0 +1,216 @@
+/* Imported Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+    background-color: rgb(243, 236, 236);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* scroll bar width setting */
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(246, 241, 241);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6e7271;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 128, 128);
+}
+
+/* Style the navigation bar */
+#navigation_bar {
+    position: sticky;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #0e2431;
+    opacity: 0.9;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#elecius {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 25px;
+    border: 3px solid #009879;
+    font-weight: 600;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    color: #009879;
+}
+
+/* Book Now Button */
+.button {
+    padding: 10px 25px;
+    border: 2px solid #009879;
+    border-radius: 4rem;
+    background-color: #009879;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #009879;
+}
+
+/* Invoice */
+.invoice{
+    padding: 26px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    width: 680px;
+    margin-top: 3%;
+    margin-left: 20rem;
+}
+.invoice-top{
+    color: white;
+    background-color: #5f4b8bff;
+}
+.invoice-top h3{
+    font-size: 55px;
+    margin-left: 1.5rem;
+    margin-top: 2.5rem;
+    
+}
+#top{
+    margin-left: 8.5rem;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.client-details{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+#client1 h4 , #clienth4{
+    color: #a0a1a1;
+}
+#client{
+    margin-left: 6rem;
+}
+
+thead{
+    background-color: #e69a8dff;
+}
+
+.button-1 {
+    padding: 7px 20px;
+    border: 2px solid #5f4b8bff;
+    border-radius: 4rem;
+    background-color: #5f4b8bff;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 56rem;
+    margin-top: 1rem;
+}
+
+.button-1:hover {
+    background-color: white;
+    color: #5f4b8bff;
+}
+.payment{
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+}
+.payment h3{
+    color: olivedrab;
+}
+
+.button-2{
+    padding: 7px 20px;
+    border: 2px solid olivedrab;
+    border-radius: 4rem;
+    background-color: olivedrab;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 10rem;
+    margin-right: 7rem;
+    margin-top: 2rem;
+}
+.button-2:hover {
+    background-color: white;
+    color: olivedrab;
+}
+
+/* Footer */
+#footer
+{
+  position: relative;
+  top: 5rem;
+  background-color:#0e2431;
+  padding: 30px;
+  width: 1358px;
+}
+
+#admin h4
+{
+  font-size:32px;
+  font-weight: 600;
+}
+
+#admin  , #lorem h5
+{
+
+  color: rgba(225, 145, 6, 0.886);
+}
+
+#detail
+{
+  color: white;
+  width: 80%;
+}
+
+#detail i
+{
+  background-color: #009879;
+  padding: 10px;
+  border-radius: 5rem;
+
+}
+#detail a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-icons
+{
+  font-size: 23px;
+  padding: 10px;
+}
+
+#detail i:hover
+{
+  background: white;
+  color: #009879;
+}
+
+.footer-bottom
+{
+  color: white;
+}

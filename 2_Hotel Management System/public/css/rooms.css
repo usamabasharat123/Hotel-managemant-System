@@ -1,0 +1,263 @@
+/* Imported Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+    background-color: rgb(243, 236, 236);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* scroll bar width setting */
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(246, 241, 241);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6e7271;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 128, 128);
+}
+
+/* Style the navigation bar */
+#navigation_bar {
+    position: sticky;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #0e2431;
+    opacity: 0.9;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#elecius {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 25px;
+    border: 3px solid #009879;
+    font-weight: 600;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    color: #009879;
+}
+
+/* Book Now Button */
+.button {
+    padding: 10px 25px;
+    border: 2px solid #009879;
+    border-radius: 4rem;
+    background-color: #009879;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #009879;
+}
+
+.button a{
+    font-size: 1.13rem;
+    padding: 0.5px 2px;
+}
+
+/* Hero Image */
+.container {
+    position: absolute;
+    color: black;
+    margin: 0;
+}
+
+.text {
+    position: absolute;
+    top: 57%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin-left: 95px;
+}
+  
+.text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-left: 3rem;
+}
+
+.text p {
+    margin-top: 35px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: -7rem;
+}
+
+/* Rooms */
+.rooms{
+    margin-top:5rem ;
+    float: right;
+}
+
+.rooms h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.elecius-room .card,.card-2{
+    background-color: rgb(243, 236, 236) ;
+    border: 0px solid rgb(243, 236, 236);
+}
+
+.card img{
+    margin-top: 2rem;
+    height: 770px;
+    width:680px;
+    margin-left: 2rem;
+    border-radius: 3%;
+    box-shadow: 0 0 2px 2px #808000;
+}
+
+.card-title h1{
+     text-align: start;
+     font-size: 40px;
+}
+
+.card-title i{
+    color: #bd7761
+}
+.card-title i:hover{
+    color: #65a5ba;
+}
+.card-body{
+    margin-left: 20rem;
+    margin-right: -25rem;
+    margin-top: 0.5rem;
+}
+.card-text{
+    font-size: 20px;
+    line-height: 2;
+}
+.card-text button{
+    margin-top: 2%;
+    border-radius: 0.5rem;
+    background-color: #bd7761;
+    border: 2px solid #bd7761;
+  }
+  .card-text button:hover{
+      color: #65a5ba;
+      border: 2px solid #65a5ba;
+  }
+  .card-text button a{
+    text-decoration: none;
+    color: white;
+  }
+  .card-text button a:hover{
+    color: #65a5ba;
+  }
+/* Double Room */
+  .card-body-2{
+    margin-right: 20rem;
+    margin-left: 3rem;
+    margin-top: 8rem;
+}
+.card-2 img{
+    margin-top: -43rem;
+    height: 700px;
+    width:680px;
+    margin-right: 2rem;
+    border-radius: 3%;
+    box-shadow: 0 0 2px 2px rgb(149, 27, 27);
+    margin-left: 39rem;
+    margin-bottom: 2rem;
+}
+
+/* Family Room */
+.card-3 img{
+    margin-top: 8rem;
+    height: 700px;
+    width:680px;
+    margin-left: 2rem;
+    border-radius: 3%;
+    box-shadow: 0 0 2px 2px rgb(255, 91, 31);
+    margin-bottom: 2rem;
+}
+.card-body-3{
+    margin-left: 20rem;
+    margin-right: -25rem;
+    margin-top: 7.5rem;
+}
+
+/* Footer */
+#footer
+{
+  position: relative;
+  top: 5rem;
+  background-color:#0e2431;
+  padding: 30px;
+}
+
+#admin h4
+{
+  font-size:32px;
+  font-weight: 600;
+}
+
+#admin  , #lorem h5
+{
+
+  color: rgba(225, 145, 6, 0.886);
+}
+
+#detail
+{
+  color: white;
+  width: 80%;
+}
+
+#detail i
+{
+  background-color: #009879;
+  padding: 10px;
+  border-radius: 5rem;
+
+}
+#detail a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-icons
+{
+  font-size: 23px;
+  padding: 10px;
+}
+
+#detail i:hover
+{
+  background: white;
+  color: #009879;
+}
+
+.footer-bottom
+{
+  color: white;
+}
+
+

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Responsive Dining & Bar Page-->
+    <link rel="stylesheet" href="invoice.css">
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <title>Invoice Generation</title>
+</head>
+
+<body class="body">
+
+    <!--Creating a Container -->
+    <div class="container-fluid">
+        <div class="row" id="navigation_bar">
+            <div class="navbar" id="nav">
+                <a class="navbar-brand" href="Home.html" id="elecius">ELECIUS HOTEL</a>
+                <a href="Home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="Rooms.html"><i class="fa fa-bed" aria-hidden="true"></i> Rooms</a>
+                <a href="Dining.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Dining & Bar</a>
+                <a href="Contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                <a href="Reservation.html"><button class="button">BOOK NOW</button></a>
+            </div>
+        </div>
+
+        <!--Invoice-->
+        <form class="invoice">
+            <div class="invoice-top">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>INVOICE</h3>
+                    </div>
+                    <div class="col-8">
+                        <div class="row" id="top">
+                            <div>
+                                <p>Gulberg Branch: 28 K Gulberg 2 ( Opposite Mobilink House - In Mini Market ) Lahore
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row" id="top">
+                            <div>
+                                <p>+92 3091665930</p>
+                            </div>
+                        </div>
+                        <div class="row" id="top">
+                            <div>
+                                <p>support@eleciushotel.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-details">
+                <div class="row" id="client1">
+                    <div class="col-4">
+                        <h4><b>Billed To:</b></h4>
+                        <p>Ahtisham Rauf</p>
+                        <p>33100-287134-56</p>
+                        <p>Lahore,Pakistan</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="row" id="client">
+                            <div>
+                                <h4><b>Invoice Number</b></h4>
+                                <p>126587</p>
+                            </div>
+                        </div>
+                        <div class="row" id="client">
+                            <div>
+                                <h4><b>Date Of Issue</b></h4>
+                                <p>26/08/22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="color:rgb(155, 99, 89) ; height:4px;">
+
+                <!--Customer Table-->
+                <div class="client-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Description</th>
+                                <th scope="col">Rate/Night</th>
+                                <th scope="col">No. Of Rooms</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Single Room</td>
+                                <td>15,820</td>
+                                <td>2</td>
+                                <td>31,640</td>
+                            </tr>
+                            <tr>
+                                <td>Lux Tax</td>
+                                <td>750</td>
+                                <td>-</td>
+                                <td>750</td>
+                            </tr>
+                            <tr>
+                                <td>Service Tax</td>
+                                <td>120</td>
+                                <td>-</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>Service Charge</td>
+                                <td>80</td>
+                                <td>-</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Parking Fee</td>
+                                <td>230</td>
+                                <td>-</td>
+                                <td>230</td>
+                            </tr>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Sub Total</td>
+                                <td colspan="4">32,820</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Tax</td>
+                                <td colspan="4">500</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Total</td>
+                                <td colspan="4">33,320</td>
+                            </tr>
+                        </tfoot>
+                        </tbody>
+                    </table>
+                    <div>
+                        <p><b>NOTE:</b> Please Pay the invoice by 29/08/22.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+ 
+        <button class="button-1">PRINT</button>
+       
+        <!--Payment methods-->
+        <div class="payment">
+            <div class="form-check">
+                <h3>PAYMENT METHOD</h3>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Ready-Cash Payment
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  JazzCash Payment
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Credit Card Payment
+                </label>
+              </div>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="button-2" type="button">PAY NOW</button>
+          </div>
+
+            <!-- Footer Section -->
+            
+ <div class="row" id="footer">
+    <div class="col-4" id="admin"><h4>ELECIUS HOTEL<br></h4><h5>A Luxury Stay</h5></div>
+      <div class="col-4" id="lorem"><h5>Have a Question?</h5>
+      <div class="row" id="detail">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><a href="mailto:support@eduonix.com">Gulberg Branch: 28 K Gulberg 2 ( Opposite Mobilink House - In Mini Market ) Lahore</a></p>
+        </div>
+      </div>
+      <div class="row" id="detail"> 
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+92 3091665930</p>
+        </div>
+      </div>
+      <div class="row" id="detail">
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">support@eleciushotel.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4" id="lorem"><h5>Follow US</h5>
+    <div class="row" id="detail">
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/signup" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+        <span><hr></span>
+      </div>
+      </div>
+      <div class="row"></div>
+        <div class="footer-bottom">
+          <p> &copy; Elecius Hotel 2022 All rights reserved. Terms privacy </p>
+        </div>
+    </div>
+</div>        

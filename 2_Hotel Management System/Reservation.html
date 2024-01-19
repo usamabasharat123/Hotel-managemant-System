@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Responsive Reservation Page-->
+        <link rel="stylesheet" href="public/css/reservation.css">
+        <!-- Boxicons CDN Link -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link href="public/css/bootstrap.css" rel="stylesheet">
+
+        <title>Reservation</title>
+    </head>
+
+    <body class="body">
+
+        <!--Creating a Container -->
+        <div class="container-fluid">
+            <div class="row" id="navigation_bar">
+                <div class="navbar" id="nav">
+                    <a class="navbar-brand" href="Home.html" id="elecius">ELECIUS HOTEL</a>
+                    <a href="Home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="Rooms.html"><i class="fa fa-bed" aria-hidden="true"></i> Rooms</a>
+                    <a href="Dining.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Dining & Bar</a>
+                    <a href="Contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                    <a href="loginpage.html">Admin</a>
+                    <a href="Reservation.html"><button class="button">BOOK NOW</button></a>
+                </div>
+            </div>
+
+            <!--Hero Image-->
+            <div class="container-fluid">
+                <img src="public/images/reservation.jpeg" alt="image_here" style="width: 1334px; height: 600px;">
+                <div class="text">
+                    <h1>Reservation</h1>
+                    <p>Discover our world's #1 Luxury Room for VIP</p>
+                </div>
+            </div>
+
+            <!--Reservation Form-->
+            <div style="float: left;">
+                <form class="reservation">
+                    <h1>Reservation Form</h1>
+                    <div class="reserve-room">
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label for="inputFirstName" class="form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="Name" aria-label="Name"
+                                    required>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity" required>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label for="inputArrivalDate" class="form-label">Check-In</label>
+                                <input type="date" class="form-control" id="inputArrivalDate" required>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="inputDepartureDate" class="form-label">Check-Out</label>
+                                <input type="date" class="form-control" id="inputDepartureDate" required>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label for="inputCNIC" class="form-label">CNIC</label>
+                                <input type="text" class="form-control" placeholder="33100-287032-92" id="cnic"
+                                    required>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="inputGender" class="form-label">Gender</label>
+                                <select class="form-select" aria-label="Default select example" required>
+                                    <option selected>----Select Gender----</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label for="inputRoom" class="form-label">Room</label>
+                                <input type="number">
+                                <!-- <select class="form-select" aria-label="Default select example" required>
+                                    <option selected>----Select----</option>
+                                    <option value="1">1 Room</option>
+                                    <option value="2">2 Rooms</option>
+                                    <option value="3">3 Rooms</option>
+                                    <option value="4">4 Rooms</option>
+                                    <option value="5">5 Rooms</option>
+                                </select> -->
+                            </div>
+                            <div class="col-md-5">
+                                <label for="inputPhone" class="form-label">Phone</label>
+                                <input type="text" class="form-control" placeholder="03158902623" id="Phone" required>
+                                <small class="invalid-feedback" id="invalid">
+                                    Enter valid phone number.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <label for="inputEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="devil323@gmail.com" id="Email"
+                                required>
+                            <small class="invalid-feedback" id="invalid">
+                                Your email must be valid.
+                            </small>
+                        </div>
+                        <div class="col-10">
+                            <label for="floatingTextarea2">Address</label>
+                            <textarea class="form-control" placeholder="Address" id="floatingTextarea2"
+                                style="height:100px"></textarea>
+                        </div>
+
+                        <!--Room Details-->
+
+                        <h3>Room Details</h3>
+                        <div class="row g-3">
+                            <div class="col-10">
+                                <label for="inputAdults" class="form-label">No. Of Persons</label>
+                                <input type="text" class="form-control" aria-label="Adults" required>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <label for="inputRoomCategory" class="form-label">Room Category</label>
+                            <select class="form-select" aria-label="Default select example" required>
+                                <option selected>----Select Room Category----</option>
+                                <option value="1">Single Room</option>
+                                <option value="2">Double Room</option>
+                                <option value="3">Deluxe Room</option>
+                                <option value="4">Family Room</option>
+                            </select>
+                        </div>
+                        <div class="col-10">
+                            <label for="floatingTextarea2">Facilities</label>
+                            <textarea class="form-control"
+                                placeholder="Write about facilities of selected room category" id="floatingTextarea2"
+                                style="height:100px" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <a href="Invoice.html"><button type="submit" class="button" id="submit">RESERVE
+                                    NOW</button></a>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <div class="side-image">
+            <div class="card" style="width: 35rem; height: 70%;">
+                <img src="public/images/reserve_room.jpg" class="card-img-top" alt="image_here" height="500px">
+                <div class="card-body">
+                    <p class="card-text">
+                    <h4 id="h4_card"><b>Amazing Culture & Breath Taking Scenery Waiting For You</b></h4><br>We offer you
+                    the best luxury hotel with an impressive history.Enjoy up to 30% discount when you book directly
+                    with us for the year 2022. <b>BOOK NOW , STAY LATER !</b></p>
+                </div>
+            </div>
+            <!--<div class="side-image">
+            <img src="reserve_room.jpg" alt="image_here">
+            <p style="margin-top: 12%; font-size: 40px;"><b>BOOK NOW , STAY LATER </b></p>
+                <p style="font-size: 25px;">Enjoy up to 30% discount when you book directly with us for the year 2022 </p>
+        </div>-->
+        </div>
+
+
+
+        <!-- Footer Section -->
+
+        <div class="row" id="footer">
+            <div class="col-4" id="admin">
+                <h4>ELECIUS HOTEL<br></h4>
+                <h5>A Luxury Stay</h5>
+            </div>
+            <div class="col-4" id="lorem">
+                <h5>Have a Question?</h5>
+                <div class="row" id="detail">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><a href="mailto:support@eduonix.com">Gulberg Branch: 28 K Gulberg 2 ( Opposite Mobilink House
+                                -
+                                In Mini Market ) Lahore</a></p>
+                    </div>
+                </div>
+                <div class="row" id="detail">
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+92 3091665930</p>
+                    </div>
+                </div>
+                <div class="row" id="detail">
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@eleciushotel.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" id="lorem">
+                <h5>Follow US</h5>
+                <div class="row" id="detail">
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/signup" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <span>
+                            <hr>
+                        </span>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="footer-bottom">
+                    <p> &copy; Elecius Hotel 2022 All rights reserved. Terms privacy </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="reservation.js"></script>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    </body>
+
+</html>

@@ -1,0 +1,316 @@
+/* Imported Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.body {
+  background-color: rgb(243, 236, 236);
+  font-family: "Poppins", sans-serif;
+}
+
+/* scroll bar width setting */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(246, 241, 241);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e7271;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 128, 128);
+}
+
+/* Style the navigation bar */
+#navigation_bar {
+  position: sticky;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #0e2431;
+  opacity: 0.9;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#elecius {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 25px;
+  border: 3px solid #009879;
+  font-weight: 600;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  color: #009879;
+}
+
+/* Book Now Button */
+.button {
+  padding: 10px 25px;
+  border: 2px solid #009879;
+  border-radius: 4rem;
+  background-color: #009879;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+}
+.button:hover {
+  background-color: white;
+  color: #009879;
+}
+
+/* Slideshow container */
+.carousel-inner {
+  border: 1px solid black;
+  position: relative;
+  max-width: 1350px;
+  height: 600px;
+}
+
+/* Text Styling */
+
+.text h5 {
+  color: black;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.text h1 {
+  color: black;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.text h3 {
+  color: black;
+  font-weight: 500;
+}
+
+/* Caption text */
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+/* Hotel Description */
+
+#com {
+  text-align: center;
+  font-size: 20px;
+}
+#be {
+  text-align: center;
+  font-size: 50px;
+}
+#lhr {
+  text-align: center;
+  font-size: 20px;
+}
+
+#description_section {
+  padding: 0 5px;
+  position: relative;
+  top: 0rem;
+  background-color: #c5c6d0;
+  height: 750px;
+}
+
+#desc {
+  float: right;
+  width: 550px;
+  height: 600px;
+  margin-left: 30px;
+  border-radius: 8px;
+  padding: auto;
+  margin-top: 75px;
+}
+.description .descr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #777;
+  font-size: 1.001rem;
+  font-weight: 500;
+}
+.description {
+  position: relative;
+  top: 4.5rem;
+  color: #0e2431;
+}
+
+/* What WE Offer */
+
+#we {
+  position: relative;
+  top: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9897a9;
+  height: 1050px;
+}
+
+#we h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+#Cards_offer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 0;
+}
+
+.card-body {
+  color: #777;
+}
+
+#h4_card {
+  color: black;
+}
+
+/* Hotel Experience */
+#Exper {
+  position: relative;
+  top: 0rem;
+  background-color: #c5c6d0;
+  height: 650px;
+}
+#Exper h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+#holiday {
+  text-align: center;
+  font-size: 30px;
+  color: #0e2431;
+  font-weight: 600;
+}
+.exper {
+  text-align: justify;
+  color: #777;
+  font-size: 21px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.experience {
+  margin-top: 3rem;
+}
+
+#expo {
+  margin-left: 2rem;
+  width: 700px;
+  height: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px 2px #0e2431;
+}
+
+/* Hotel Gallery */
+#Gallery {
+  position: relative;
+  top: 0rem;
+  background-color: #9897a9;
+}
+
+#Gallery h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+#col-3 {
+  padding: 5px 3px;
+}
+
+.gallery_images:hover {
+  transform: scale(1.2);
+  transition-delay: 0.5s;
+}
+
+.image {
+  /* display: flex; */
+  height: 300px;
+  /* width: 92%; */
+  border-radius: 2rem;
+  padding: 3px 0;
+}
+
+/* Footer */
+#footer {
+  position: relative;
+  top: 5rem;
+  background-color: #0e2431;
+  padding: 30px;
+}
+
+#admin h4 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#admin,
+#lorem h5 {
+  color: rgba(225, 145, 6, 0.886);
+}
+
+#detail {
+  color: white;
+  width: 80%;
+}
+
+#detail i {
+  background-color: #009879;
+  padding: 10px;
+  border-radius: 5rem;
+}
+#detail a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-icons {
+  font-size: 23px;
+  padding: 10px;
+}
+
+#detail i:hover {
+  background: white;
+  color: #009879;
+}
+
+.footer-bottom {
+  color: white;
+}
